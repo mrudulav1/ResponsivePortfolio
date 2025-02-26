@@ -36,4 +36,24 @@ menuIcon.classList.remove('fa-xmark');
 navbar.classList.remove('active');
 
 };
+// scrollreveal
+ScrollReveal({ 
+    distance:'80px',
+    duration:2000,
+    delay:200,
 
+});
+ScrollReveal().reveal('.home-content,heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container,.portfolio-box,.contact form', { origin: 'button' });
+ScrollReveal().reveal('.home-contact h1, .about-img',{origin:'left'});
+ScrollReveal().reveal('.home-contact p,.about-contact',{origin:'right'});
+
+// typed js
+
+const typed = new Typed('.multiple-text', {
+    strings: ['FrontEnd Developer', 'Web Designer', 'YouTuber'],
+    typeSpeed: 70,           // Correct key: typeSpeed, not typedSpeed
+    backSpeed: 70,           // Correct key: backSpeed
+    backDelay: 1000,
+    loop: true
+});
